@@ -27,13 +27,18 @@
   box-sizing: border-box;
 }
 
-.inverted {
-  background-color: white;
-  color: black;
+.verted {
+  background-color: black;
+  color: white;
   padding-left: 1ch;
   padding-right: 1ch;
 
   width: fit-content;
+}
+
+.verted.in {
+  background-color: white;
+  color: black;
 }
 
 .rounded {
@@ -73,9 +78,17 @@
   min-width: 20ch;
 }
 
+.cutout {
+  mix-blend-mode: screen;
+}
+
 .sect.third {
   min-width: 40%;
   padding: 3ch;
+}
+
+.half-height {
+  max-height: 400pt !important;
 }
 
 .green {
@@ -100,4 +113,8 @@
 
 .tag-size {
   font-size: 14pt;
+}
+
+.shadowed-text h2{
+  text-shadow: 0px 0px 3px black;
 }
